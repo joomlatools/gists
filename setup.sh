@@ -29,4 +29,4 @@ if ! joomla plugin:list | grep -cq joomla-console-joomlatools; then
   echo "ERROR: joomla-console-joomlatools plugin is not installed!"; exit 1; 
 fi
 
-[ ! -d /var/www/test ] && echo "Creating http://joomla.box/test" && joomla site:create test --symlink=extman,docman,fileman,logman
+[ ! -d /var/www/joomlatools ] && echo "Creating http://joomla.box/joomlatools" && joomla site:create joomlatools --symlink=extman,docman,fileman,logman
