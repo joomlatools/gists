@@ -2,9 +2,9 @@
 
 git config --global credential.helper 'cache --timeout=3600'
 
-composer global update joomlatools/joomla-console
+composer global update joomlatools/console
 
-joomla plugin:install joomlatools/joomla-console-joomlatools:dev-master
+joomla plugin:install joomlatools/console-joomlatools
 
 [ -d ~/Projects/koowa ] && mv ~/Projects/koowa ~/Projects/nooku-framework
 [ -d ~/Projects/nooku-framework-joomla ]    && mv ~/Projects/nooku-framework-joomla    ~/Projects/joomlatools-framework
@@ -25,8 +25,8 @@ joomla plugin:install joomlatools/joomla-console-joomlatools:dev-master
 [ ! -d ~/Projects/logman ] && git clone -b develop https://git.assembla.com/joomlatools-logman.git ~/Projects/logman
 [ ! -d ~/Projects/extman ] && git clone -b develop https://git.assembla.com/joomlatools-extman.git ~/Projects/extman
 
-if ! joomla plugin:list | grep -cq joomla-console-joomlatools; then 
-  echo "ERROR: joomla-console-joomlatools plugin is not installed!"; exit 1; 
+if ! joomla plugin:list | grep -cq console-joomlatools; then 
+  echo "ERROR: console-joomlatools plugin is not installed!"; exit 1; 
 fi
 
 [ ! -d /var/www/joomlatools ] && echo "Creating http://joomla.box/joomlatools" && joomla site:create joomlatools --symlink=extman,docman,fileman,logman
