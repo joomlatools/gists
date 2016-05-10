@@ -12,6 +12,7 @@ cd ~/.composer/vendor/joomlatools/console/plugins/ && composer require joomlatoo
 [ ! -d ~/Projects/joomlatools-framework-scheduler ] && git clone -b master https://github.com/joomlatools/joomlatools-framework-scheduler.git ~/Projects/joomlatools-framework-scheduler
 [ ! -d ~/Projects/joomlatools-framework-migrator ] && git clone -b master https://github.com/joomlatools/joomlatools-framework-migrator.git ~/Projects/joomlatools-framework-migrator
 [ ! -d ~/Projects/joomlatools-framework-ckeditor ] && git clone -b master https://github.com/joomlatools/joomlatools-framework-ckeditor.git ~/Projects/joomlatools-framework-ckeditor
+[ ! -d ~/Projects/joomlatools-framework-tags ] && git clone -b master https://github.com/joomlatools/joomlatools-framework-tags.git ~/Projects/joomlatools-framework-tags
 
 [ ! -d ~/Projects/docman ] && git clone -b master https://git.assembla.com/joomlatools-docman.git ~/Projects/docman
 [ ! -d ~/Projects/fileman ] && git clone -b master https://git.assembla.com/joomlatools-fileman.git ~/Projects/fileman
