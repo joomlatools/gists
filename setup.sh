@@ -3,7 +3,7 @@
 git config --global credential.helper 'cache --timeout=3600'
 
 composer global update joomlatools/console
-cd ~/.composer/vendor/joomlatools/console/plugins/ && composer require joomlatools/console-joomlatools:dev-develop
+cd ~/.composer/vendor/joomlatools/console/plugins/ && composer require joomlatools/console-joomlatools:dev-master
 
 [ ! -d ~/Projects/joomlatools-framework ] && git clone -b master https://github.com/joomlatools/joomlatools-framework.git ~/Projects/joomlatools-framework
 
@@ -23,4 +23,4 @@ if ! joomla plugin:list | grep -cq console-joomlatools; then
   echo "ERROR: console-joomlatools plugin is not installed!"; exit 1; 
 fi
 
-[ ! -d /var/www/joomlatools ] && echo "Creating http://joomla.box/joomlatools" && joomla site:create joomlatools --symlink=docman,fileman,logman
+[ ! -d /var/www/joomlatools ] && echo "Creating http://joomla.box/joomlatools" && joomla site:create joomlatools --symlink=docman,fileman,logman,textman
