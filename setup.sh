@@ -3,7 +3,7 @@
 git config --global credential.helper 'cache --timeout=3600'
 
 composer global update joomlatools/console
-cd ~/.composer/vendor/joomlatools/console/plugins/ && composer require joomlatools/console-joomlatools:dev-master
+joomla plugin:install joomlatools/console-joomlatools:dev-master
 
 [ ! -d ~/Projects/joomlatools-framework ] && git clone -b master https://github.com/joomlatools/joomlatools-framework.git ~/Projects/joomlatools-framework
 
