@@ -18,6 +18,7 @@ joomla plugin:install joomlatools/console-joomlatools:dev-master
 [ ! -d ~/Projects/fileman ] && git clone -b master https://github.com/joomlatools/fileman.git ~/Projects/fileman
 [ ! -d ~/Projects/logman ] && git clone -b master https://github.com/joomlatools/logman.git ~/Projects/logman
 [ ! -d ~/Projects/textman ] && git clone -b master https://github.com/joomlatools/textman.git ~/Projects/textman
+[ ! -d ~/Projects/connect ] && git clone -b master https://github.com/joomlatools/connect.git ~/Projects/connect
 
 if ! joomla plugin:list | grep -cq console-joomlatools; then 
   echo "ERROR: console-joomlatools plugin is not installed!"; exit 1; 
