@@ -14,6 +14,9 @@ joomla plugin:install joomlatools/console-joomlatools:dev-master
 [ ! -d ~/Projects/joomlatools-framework-ckeditor ] && git clone -b master https://github.com/joomlatools/joomlatools-framework-ckeditor.git ~/Projects/joomlatools-framework-ckeditor
 [ ! -d ~/Projects/joomlatools-framework-tags ] && git clone -b master https://github.com/joomlatools/joomlatools-framework-tags.git ~/Projects/joomlatools-framework-tags
 
+[ ! -d ~/Projects/kodekit-ui ] && git clone -b master https://github.com/timble/kodekit-ui.git ~/Projects/kodekit-ui
+[ ! -d ~/Projects/joomlatools-ui ] && git clone -b master https://github.com/joomlatools/joomlatools-ui.git ~/Projects/joomlatools-ui
+
 [ ! -d ~/Projects/docman ] && git clone -b master https://github.com/joomlatools/docman.git ~/Projects/docman
 [ ! -d ~/Projects/fileman ] && git clone -b master https://github.com/joomlatools/fileman.git ~/Projects/fileman
 [ ! -d ~/Projects/logman ] && git clone -b master https://github.com/joomlatools/logman.git ~/Projects/logman
