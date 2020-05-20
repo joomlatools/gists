@@ -15,13 +15,15 @@ joomla plugin:install joomlatools/console-joomlatools:dev-master
 [ ! -d ~/Projects/joomlatools-framework-tags ] && git clone -b master https://github.com/joomlatools/joomlatools-framework-tags.git ~/Projects/joomlatools-framework-tags
 
 [ ! -d ~/Projects/kodekit-ui ] && git clone -b master https://github.com/timble/kodekit-ui.git ~/Projects/kodekit-ui
-[ ! -d ~/Projects/joomlatools-ui ] && git clone -b master https://github.com/joomlatools/joomlatools-ui.git ~/Projects/joomlatools-ui
 
 [ ! -d ~/Projects/docman ] && git clone -b master https://github.com/joomlatools/docman.git ~/Projects/docman
 [ ! -d ~/Projects/fileman ] && git clone -b master https://github.com/joomlatools/fileman.git ~/Projects/fileman
+[ ! -d ~/Projects/leadman ] && git clone -b master https://github.com/joomlatools/leadman.git ~/Projects/leadman
 [ ! -d ~/Projects/logman ] && git clone -b master https://github.com/joomlatools/logman.git ~/Projects/logman
 [ ! -d ~/Projects/textman ] && git clone -b master https://github.com/joomlatools/textman.git ~/Projects/textman
 [ ! -d ~/Projects/connect ] && git clone -b master https://github.com/joomlatools/connect.git ~/Projects/connect
+
+[ ! -d ~/Projects/build-scripts ] && git clone -b master https://github.com/joomlatools/build-scripts.git ~/Projects/build-scripts
 
 if ! joomla plugin:list | grep -cq console-joomlatools; then 
   echo "ERROR: console-joomlatools plugin is not installed!"; exit 1; 
